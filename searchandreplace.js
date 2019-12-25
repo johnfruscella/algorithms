@@ -3,10 +3,10 @@ function myReplace(str, before, after) {
     let searchword = str.indexOf(before)
     if (searchword > -1) {
          str.splice(searchword,1,after);
-         str.join();
+        strWithReplaced = str.join(" ");
     }
     // console.log(after1);
-    console.log(str);
+    console.log(strWithReplaced);
     
     
   }
