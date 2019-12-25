@@ -1,15 +1,12 @@
 function myReplace(str, before, after) {
-    str = str.split(" ");
-    let searchword = str.indexOf(before)
-    if (searchword > -1) {
-         str.splice(searchword,1,after);
-        strWithReplaced = str.join(" ");
-    }
-    // console.log(after1);
-    console.log(strWithReplaced);
-    
-    
+  if (before[0] === before[0].toUpperCase()) {
+    after = after[0].toUpperCase() + after.slice(1);
   }
-  
-  myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
-  
+
+  console.log(str.replace(before, after));
+  return str.replace(before, after);
+
+}
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+myReplace("Let us go to the store", "store", "mall");
+myReplace("Let us get back to more Coding", "Coding", "algorithms")
