@@ -1,7 +1,7 @@
-var Person = function(firstAndLast) {
+let Person = function(firstAndLast) {
     // Complete the method below and implement the others similarly
   
-      var fullName = firstAndLast.split(' ');
+      let fullName = firstAndLast.split(' ');
   
     this.getFullName = function() {
       return fullName.join(' ');
@@ -32,7 +32,7 @@ var Person = function(firstAndLast) {
       
   };
   
-  var bob = new Person('Bob Ross');
+let bob = new Person('Bob Ross');
 bob.getFullName(); // returns 'Bob Ross'
 bob.getFirstName(); // returns 'Bob'
 bob.getLastName(); // returns 'Ross'
