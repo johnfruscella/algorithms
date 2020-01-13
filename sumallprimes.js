@@ -17,4 +17,5 @@ function sumPrimes(max) {
     return summedPrimes;
 }
 
-console.log(sumPrimes(10))
+console.log(sumPrimes(10));
+
